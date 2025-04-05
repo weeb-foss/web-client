@@ -15,9 +15,12 @@ importers:
         specifier: ^19.0.0
         version: 19.1.0(react@19.1.0)
       tuono:
-        specifier: 0.19.0
-        version: 0.19.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.39.0)
+        specifier: 0.19.2
+        version: 0.19.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.39.0)
     devDependencies:
+      '@biomejs/biome':
+        specifier: 1.9.4
+        version: 1.9.4
       '@types/react':
         specifier: ^19.0.2
         version: 19.1.0
@@ -112,6 +115,59 @@ packages:
   '@babel/types@7.27.0':
     resolution: {integrity: sha512-H45s8fVLYjbhFH62dIJ3WtmJ6RSPt/3DRO0ZcT2SUiYiQyz3BLVb9ADEnLl91m74aQPS3AzzeajZHYOalWe3bg==}
     engines: {node: '>=6.9.0'}
+
+  '@biomejs/biome@1.9.4':
+    resolution: {integrity: sha512-1rkd7G70+o9KkTn5KLmDYXihGoTaIGO9PIIN2ZB7UJxFrWw04CZHPYiMRjYsaDvVV7hP1dYNRLxSANLaBFGpog==}
+    engines: {node: '>=14.21.3'}
+    hasBin: true
+
+  '@biomejs/cli-darwin-arm64@1.9.4':
+    resolution: {integrity: sha512-bFBsPWrNvkdKrNCYeAp+xo2HecOGPAy9WyNyB/jKnnedgzl4W4Hb9ZMzYNbf8dMCGmUdSavlYHiR01QaYR58cw==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@biomejs/cli-darwin-x64@1.9.4':
+    resolution: {integrity: sha512-ngYBh/+bEedqkSevPVhLP4QfVPCpb+4BBe2p7Xs32dBgs7rh9nY2AIYUL6BgLw1JVXV8GlpKmb/hNiuIxfPfZg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@biomejs/cli-linux-arm64-musl@1.9.4':
+    resolution: {integrity: sha512-v665Ct9WCRjGa8+kTr0CzApU0+XXtRgwmzIf1SeKSGAv+2scAlW6JR5PMFo6FzqqZ64Po79cKODKf3/AAmECqA==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@biomejs/cli-linux-arm64@1.9.4':
+    resolution: {integrity: sha512-fJIW0+LYujdjUgJJuwesP4EjIBl/N/TcOX3IvIHJQNsAqvV2CHIogsmA94BPG6jZATS4Hi+xv4SkBBQSt1N4/g==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@biomejs/cli-linux-x64-musl@1.9.4':
+    resolution: {integrity: sha512-gEhi/jSBhZ2m6wjV530Yy8+fNqG8PAinM3oV7CyO+6c3CEh16Eizm21uHVsyVBEB6RIM8JHIl6AGYCv6Q6Q9Tg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+
+  '@biomejs/cli-linux-x64@1.9.4':
+    resolution: {integrity: sha512-lRCJv/Vi3Vlwmbd6K+oQ0KhLHMAysN8lXoCI7XeHlxaajk06u7G+UsFSO01NAs5iYuWKmVZjmiOzJ0OJmGsMwg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [linux]
+
+  '@biomejs/cli-win32-arm64@1.9.4':
+    resolution: {integrity: sha512-tlbhLk+WXZmgwoIKwHIHEBZUwxml7bRJgk0X2sPyNR3S93cdRq6XulAZRQJ17FYGGzWne0fgrXBKpl7l4M87Hg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@biomejs/cli-win32-x64@1.9.4':
+    resolution: {integrity: sha512-8Y5wMhVIPaWe6jw2H+KlEm4wP/f7EW3810ZLmDlrEEy5KvBsb9ECEfu/kMWD484ijfQ8+nIi0giMgu9g1UAuuA==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [win32]
 
   '@esbuild/aix-ppc64@0.25.2':
     resolution: {integrity: sha512-wCIboOL2yXZym2cgm6mlA742s9QeJ8DjGVaL39dLN4rRwrOgOyYSnOaFPhKZGLb2ngj4EyfAFjsNJwPXZvseag==}
@@ -624,16 +680,16 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
-  tuono-fs-router-vite-plugin@0.19.0:
-    resolution: {integrity: sha512-ORD5FGId3wz7KDnLTdgyI7aoxF4fYnzAjGpZxkZR6jNm8C2RFV7Qa9BoCFFMT9dB+lXJBG49pTuV7qXT1DOjJA==}
+  tuono-fs-router-vite-plugin@0.19.2:
+    resolution: {integrity: sha512-zzchkP/nlZZvhI3xqpi6YlZdjQPd6Iwzb3wDqYVZq+t7Dnj1ZI+EXTGVumiNOpKLtCZSJWgGadXvTd1iyLGr8g==}
 
-  tuono-router@0.19.0:
-    resolution: {integrity: sha512-J6yVrqV3DgJcF4KnsF9qfFdpxag6BbNhHAf2urILE/Sr+I22akp+ZWnN0kZnU2IhE9jA2x1F8evLU1QJZ7MBGQ==}
+  tuono-router@0.19.2:
+    resolution: {integrity: sha512-bBKY4nBm7jSG8RSV+NUfob6ZPD6fWykZgkoUn+Z2lVjszWfonsBAZJXPZ3PV034UiroYgRHh2fr35K0NeImY7A==}
     peerDependencies:
       react: '>=19.0.0'
 
-  tuono@0.19.0:
-    resolution: {integrity: sha512-28Tn994XMlGfaRPIQXhWpbisyQScdH6p6Gzb0g/MuG1HZyGIQ828ajuCf0TwgPn8q1Xxt1PhDMV7ojvgIDtKjg==}
+  tuono@0.19.2:
+    resolution: {integrity: sha512-sh2KfTV8a4iWA7oz9XFrtZW7s/tgeGaFW9Nhr9iunJ+yJLPKA2Iy9FlONumx8oAUMUK0wLkIUXj6Poy32rIZpw==}
     hasBin: true
     peerDependencies:
       react: '>=19.0.0'
@@ -816,6 +872,41 @@ snapshots:
     dependencies:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
+
+  '@biomejs/biome@1.9.4':
+    optionalDependencies:
+      '@biomejs/cli-darwin-arm64': 1.9.4
+      '@biomejs/cli-darwin-x64': 1.9.4
+      '@biomejs/cli-linux-arm64': 1.9.4
+      '@biomejs/cli-linux-arm64-musl': 1.9.4
+      '@biomejs/cli-linux-x64': 1.9.4
+      '@biomejs/cli-linux-x64-musl': 1.9.4
+      '@biomejs/cli-win32-arm64': 1.9.4
+      '@biomejs/cli-win32-x64': 1.9.4
+
+  '@biomejs/cli-darwin-arm64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-darwin-x64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-linux-arm64-musl@1.9.4':
+    optional: true
+
+  '@biomejs/cli-linux-arm64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-linux-x64-musl@1.9.4':
+    optional: true
+
+  '@biomejs/cli-linux-x64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-win32-arm64@1.9.4':
+    optional: true
+
+  '@biomejs/cli-win32-x64@1.9.4':
+    optional: true
 
   '@esbuild/aix-ppc64@0.25.2':
     optional: true
@@ -1191,7 +1282,7 @@ snapshots:
 
   source-map-js@1.2.1: {}
 
-  tuono-fs-router-vite-plugin@0.19.0:
+  tuono-fs-router-vite-plugin@0.19.2:
     dependencies:
       '@babel/core': 7.26.10
       '@babel/types': 7.27.0
@@ -1211,14 +1302,14 @@ snapshots:
       - tsx
       - yaml
 
-  tuono-router@0.19.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  tuono-router@0.19.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       react: 19.1.0
       react-intersection-observer: 9.16.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     transitivePeerDependencies:
       - react-dom
 
-  tuono@0.19.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.39.0):
+  tuono@0.19.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.39.0):
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.10)
@@ -1228,8 +1319,8 @@ snapshots:
       fast-text-encoding: 1.0.6
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
-      tuono-fs-router-vite-plugin: 0.19.0
-      tuono-router: 0.19.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      tuono-fs-router-vite-plugin: 0.19.2
+      tuono-router: 0.19.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       url-search-params-polyfill: 8.2.5
       vite: 6.2.5
       web-streams-polyfill: 4.1.0
