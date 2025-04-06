@@ -14,3 +14,7 @@ target
 
 # Ignore local env files
 .env*.local
+
+## Panda
+styled-system
+styled-system-studio
