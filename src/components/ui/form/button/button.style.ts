@@ -11,7 +11,7 @@ export const button = cva({
 		whiteSpace: "nowrap",
 		cursor: "pointer",
 		transitionDuration: "fast",
-		fontWeight: "normal",
+		fontWeight: "bold",
 		w: "fit",
 		_disabled: {
 			opacity: 0.5,
@@ -28,12 +28,12 @@ export const button = cva({
 					_hover: "brand.hover",
 					_active: "brand.highlight",
 				},
-				color: "bg",
+				color: "background",
 			},
 			secondary: {
 				bg: {
-					base: "background.surface",
-					_hover: "background.surface",
+					base: "background.content",
+					_hover: "background.content",
 				},
 				color: {
 					base: "text.subtle",
@@ -42,7 +42,7 @@ export const button = cva({
 			ghost: {
 				bg: {
 					base: "transparent",
-					_hover: "background.surface",
+					_hover: "background.content",
 				},
 				color: "text",
 			},
@@ -77,7 +77,7 @@ export const button = cva({
 				},
 			},
 			md: {
-				px: 4,
+				px: 5,
 				py: 2,
 				textStyle: "base",
 				"& svg": {

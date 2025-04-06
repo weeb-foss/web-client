@@ -323,29 +323,38 @@ export const colors = defineTokens.colors({
 	},
 	background: {
 		DEFAULT: {
-			value: "#101211",
+			value: "#111113",
+		},
+		subtle: {
+			value: "#18191B",
 		},
 		content: {
-			value: "#202221",
+			value: "#212225",
 		},
 		surface: {
-			value: "#272a29",
+			value: "#272A2D",
+		},
+		overlay: {
+			value: "#2E3135",
 		},
 	},
 	border: {
 		DEFAULT: {
-			value: "#373b39",
+			value: "#363A3F",
 		},
 		subtle: {
-			value: "#4b4f4d",
+			value: "#43484E",
+		},
+		muted: {
+			value: "#5A6169",
 		},
 	},
 	text: {
 		DEFAULT: {
-			value: "#FFFFFF",
+			value: "#EDEEF0",
 		},
 		subtle: {
-			value: "#E0E0E0",
+			value: "#B0B4BA",
 		},
 		muted: {
 			value: "#A0A0A0",
@@ -402,12 +411,15 @@ export const zIndex = defineTokens.zIndex({
 
 export default definePreset({
 	name: "brand-preset",
+	presets: ["@pandacss/preset-base", "@pandacss/preset-panda"],
 	theme: {
-		animationStyles,
-		tokens: {
-			colors,
-			zIndex,
+		extend: {
+			animationStyles,
+			tokens: {
+				colors,
+				zIndex,
+			},
+			keyframes,
 		},
-		keyframes,
 	},
 });
