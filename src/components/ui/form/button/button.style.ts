@@ -36,7 +36,7 @@ export const button = cva({
 					_hover: "background.surface",
 				},
 				color: {
-					base: "text.secondary",
+					base: "text.subtle",
 				},
 			},
 			ghost: {
