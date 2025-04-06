@@ -1,4 +1,4 @@
-import { cva } from "@/styled-system/css";
+import { cva, type RecipeVariantProps } from "@/styled-system/css";
 
 export const fieldRoot = cva({
 	base: {
@@ -71,3 +71,12 @@ export const fieldValidity = cva({
 		color: "accents.green",
 	},
 });
+
+export type FieldRootVariants = RecipeVariantProps<typeof fieldRoot>;
+export type FieldLabelVariants = RecipeVariantProps<typeof fieldLabel>;
+export type FieldControlVariants = RecipeVariantProps<typeof fieldControl>;
+export type FieldDescriptionVariants = RecipeVariantProps<
+	typeof fieldDescription
+>;
+export type FieldErrorVariants = RecipeVariantProps<typeof fieldError>;
+export type FieldValidityVariants = RecipeVariantProps<typeof fieldValidity>;
