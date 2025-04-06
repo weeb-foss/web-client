@@ -1,7 +1,7 @@
 import type { ReactNode, JSX } from "react";
 import { TuonoScripts } from "tuono";
 
-import "../styles/global.css";
+import "@/styles/global.css";
 
 interface RootLayoutProps {
 	children: ReactNode;
