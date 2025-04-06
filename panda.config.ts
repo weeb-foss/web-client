@@ -27,4 +27,15 @@ export default defineConfig({
 
 	// Prefix for generated class names
 	prefix: "orb",
+
+	// Global css
+	globalCss: {
+		extend: {
+			body: {
+				bg: "background",
+				color: "text",
+				fontFamily: "Geist, sans-serif",
+			},
+		},
+	},
 });
