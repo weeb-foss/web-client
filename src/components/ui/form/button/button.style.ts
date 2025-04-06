@@ -1,6 +1,5 @@
-import { cva, type RecipeVariantProps } from "@/styled-system/css";
-import { styled } from "@/styled-system/jsx";
-import { Link } from "tuono";
+import { cva } from "@/styled-system/css";
+import type { RecipeVariantProps } from "@/styled-system/types";
 
 export const button = cva({
 	base: {
@@ -114,6 +113,3 @@ export const button = cva({
 });
 
 export type ButtonVariants = RecipeVariantProps<typeof button>;
-
-export const Button = styled(styled.button, button);
-export const ButtonLink = styled(Link, button);

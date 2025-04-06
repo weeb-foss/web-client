@@ -12,6 +12,8 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
+		"@base-ui-components/react": "1.0.0-alpha.7",
+		"lucide-react": "^0.487.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"tuono": "0.19.2"
