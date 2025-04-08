@@ -32,8 +32,9 @@ export const button = cva({
 			},
 			secondary: {
 				bg: {
-					base: "background.content",
+					base: "background.subtle",
 					_hover: "background.content",
+					_active: "background.surface",
 				},
 				color: {
 					base: "text.subtle",
@@ -103,6 +104,18 @@ export const button = cva({
 			false: {
 				rounded: "lg",
 			},
+		},
+		levitate: {
+			true: {
+				transitionDuration: "fast",
+				_hover: {
+					scale: 1.05,
+				},
+				_active: {
+					scale: 0.95,
+				},
+			},
+			false: {},
 		},
 	},
 	defaultVariants: {
