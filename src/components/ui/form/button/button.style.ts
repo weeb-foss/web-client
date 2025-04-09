@@ -3,6 +3,7 @@ import type { RecipeVariantProps } from "@/styled-system/types";
 
 export const button = cva({
 	base: {
+		outline: "none",
 		alignItems: "center",
 		display: "inline-flex",
 		gap: 2,
@@ -10,7 +11,6 @@ export const button = cva({
 		position: "relative",
 		whiteSpace: "nowrap",
 		cursor: "pointer",
-		transitionDuration: "fast",
 		fontWeight: "bold",
 		w: "fit",
 		_disabled: {
@@ -32,9 +32,9 @@ export const button = cva({
 			},
 			secondary: {
 				bg: {
-					base: "background.subtle",
-					_hover: "background.content",
-					_active: "background.surface",
+					base: "background.content",
+					_hover: "background.surface",
+					_active: "background.content",
 				},
 				color: {
 					base: "text.subtle",
@@ -78,7 +78,7 @@ export const button = cva({
 				},
 			},
 			md: {
-				px: 5,
+				px: 4,
 				py: 2,
 				textStyle: "base",
 				"& svg": {

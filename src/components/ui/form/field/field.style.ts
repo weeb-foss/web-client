@@ -4,6 +4,7 @@ export const fieldRoot = cva({
 	base: {
 		display: "flex",
 		flexDirection: "column",
+		alignItems: "start",
 		gap: "2",
 		width: "full",
 	},
@@ -31,7 +32,7 @@ export const fieldLabel = cva({
 				_after: {
 					content: '"*"',
 					ml: "1",
-					color: "error",
+					color: "accent.error",
 				},
 			},
 		},

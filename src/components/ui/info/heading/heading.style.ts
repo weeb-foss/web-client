@@ -3,7 +3,7 @@ import type { RecipeVariantProps } from "@/styled-system/css";
 
 export const heading = cva({
 	base: {
-		lineHeight: "1.25",
+		lineHeight: "1",
 		letterSpacing: "0",
 		textDecoration: "None",
 		textTransform: "None",

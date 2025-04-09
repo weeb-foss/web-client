@@ -13,12 +13,14 @@ export const input = cva({
 		bg: {
 			base: "background.subtle",
 			_hover: "background.content",
+			_focus: "background.content",
 		},
 		color: "text.subtle",
 		fontSize: "sm",
 		transition: "fast",
 		_placeholder: {
 			color: "text.muted",
+			fontStyle: "italic",
 		},
 		_focus: {
 			outline: "none",

@@ -3,3 +3,4 @@ import { styled } from "@/styled-system/jsx";
 import { input } from "./input.style";
 
 export const Input = styled(BaseInput, input);
+export const Textarea = styled(styled.textarea, input);

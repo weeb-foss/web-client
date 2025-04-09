@@ -264,16 +264,16 @@ export const animationStyles = defineAnimationStyles({
 	"slide-fade-in": {
 		value: {
 			transformOrigin: "var(--transform-origin)",
-			"&[data-placement^=top]": {
+			"&[data-side^=top]": {
 				animationName: "slide-from-bottom, fade-in",
 			},
-			"&[data-placement^=bottom]": {
+			"&[data-side^=bottom]": {
 				animationName: "slide-from-top, fade-in",
 			},
-			"&[data-placement^=left]": {
+			"&[data-side^=left]": {
 				animationName: "slide-from-right, fade-in",
 			},
-			"&[data-placement^=right]": {
+			"&[data-side^=right]": {
 				animationName: "slide-from-left, fade-in",
 			},
 		},
@@ -281,16 +281,16 @@ export const animationStyles = defineAnimationStyles({
 	"slide-fade-out": {
 		value: {
 			transformOrigin: "var(--transform-origin)",
-			"&[data-placement^=top]": {
+			"&[data-side^=top]": {
 				animationName: "slide-to-bottom, fade-out",
 			},
-			"&[data-placement^=bottom]": {
+			"&[data-side^=bottom]": {
 				animationName: "slide-to-top, fade-out",
 			},
-			"&[data-placement^=left]": {
+			"&[data-side^=left]": {
 				animationName: "slide-to-right, fade-out",
 			},
-			"&[data-placement^=right]": {
+			"&[data-side^=right]": {
 				animationName: "slide-to-left, fade-out",
 			},
 		},
@@ -363,6 +363,9 @@ export const colors = defineTokens.colors({
 	accent: {
 		error: {
 			value: "#FF6B6B",
+		},
+		gold: {
+			value: "#FFB84D",
 		},
 	},
 });
