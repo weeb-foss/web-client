@@ -5,6 +5,7 @@ import { Span, Text } from "@/components/ui/info/text/text";
 import type { TextVariants } from "@/components/ui/info/text/text.style";
 import { Container, Grid, GridItem, Stack } from "@/styled-system/jsx";
 import config from "../../../brand.preset";
+import HGameCard from "@/components/shared/cards/hgame";
 
 const headingSizes = ["lg", "xl", "2xl", "3xl", "4xl", "5xl", "6xl"];
 const textSizes = ["xs", "sm", "md", "lg"];
@@ -54,6 +55,7 @@ export default function KitchenSinkPage() {
 						));
 					})}
 				</Grid>
+				<HGameCard />
 			</Stack>
 		</Container>
 	);
