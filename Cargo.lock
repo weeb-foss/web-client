@@ -229,11 +229,10 @@ dependencies = [
 
 [[package]]
 name = "colored"
-version = "2.2.0"
+version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "117725a109d387c937a1533ce01b450cbde6b88abceea8473c4d7a85853cda3c"
+checksum = "fde0e0ec90c9dfb3b4b1a0891a7dcd0e2bffde2f7efed5fe7c9bb00e5bfb915e"
 dependencies = [
- "lazy_static",
  "windows-sys 0.59.0",
 ]
 
@@ -869,12 +868,6 @@ dependencies = [
  "once_cell",
  "wasm-bindgen",
 ]
-
-[[package]]
-name = "lazy_static"
-version = "1.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bbd2bcb4c963f2ddae06a2efc7e9f3591312473c50c6685e1f298068316e66fe"
 
 [[package]]
 name = "libc"
@@ -1890,9 +1883,9 @@ dependencies = [
 
 [[package]]
 name = "tuono_internal"
-version = "0.19.2"
+version = "0.19.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d66c66fe2322e019d9fc057cae771177783b548cc4b983f390b9ff624dd562aa"
+checksum = "b0d21383f12c0a62cc98c360a2c997106abb8c4b0a274b2b2aaa15b972bfd54b"
 dependencies = [
  "serde",
  "serde_json",
@@ -1900,9 +1893,9 @@ dependencies = [
 
 [[package]]
 name = "tuono_lib"
-version = "0.19.2"
+version = "0.19.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e12ef3c4afbfb42e918732cab9fc3e1b87d1cc6e477449a6858e6f28b0753ec1"
+checksum = "a8b204d33cbfb5e0476eae08b13c74e885ee33296a272b9551eaa0e1b8d1331e"
 dependencies = [
  "axum",
  "axum-extra",
@@ -1930,9 +1923,9 @@ dependencies = [
 
 [[package]]
 name = "tuono_lib_macros"
-version = "0.19.2"
+version = "0.19.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ea8439e89ec3373765aec3f879de578c7e8d92dc0f8a6c3068d1f4354a3a2581"
+checksum = "4e68a2d3dc63b99ad95229a02eaa059421b0509114ece91981fdd422fec5e404"
 dependencies = [
  "quote",
  "syn",
