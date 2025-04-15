@@ -367,6 +367,9 @@ export const colors = defineTokens.colors({
 		gold: {
 			value: "#FFB84D",
 		},
+		sky: {
+			value: "#6dbaf8",
+		},
 	},
 });
 
