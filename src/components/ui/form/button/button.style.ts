@@ -19,6 +19,7 @@ export const button = cva({
 			pointerEvents: "none",
 		},
 		userSelect: "none",
+		transitionDuration: "fast",
 	},
 	variants: {
 		variant: {
@@ -102,12 +103,11 @@ export const button = cva({
 				rounded: "full",
 			},
 			false: {
-				rounded: "lg",
+				rounded: "xl",
 			},
 		},
 		levitate: {
 			true: {
-				transitionDuration: "fast",
 				_hover: {
 					scale: 1.05,
 				},
