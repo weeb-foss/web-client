@@ -7,12 +7,12 @@ import { Center, HStack, styled, VStack } from "@/styled-system/jsx";
 
 export default function LandingHero() {
 	return (
-		<Center h="60vh" pos="relative" overflowX={"hidden"} overflowY={"clip"}>
+		<Center h="70vh" pos="relative" overflowX={"hidden"} overflowY={"clip"}>
 			<Image
 				src="/assets/apex-char.png"
 				alt="landing left image"
 				w={"xl"}
-				h={"xl"}
+				h={"min"}
 				pos={"absolute"}
 				left={-12}
 				zIndex={"hide"}
@@ -59,7 +59,7 @@ export default function LandingHero() {
 				src="/assets/fragpunk-char.png"
 				alt="landing right image"
 				w={"3xl"}
-				h={"xl"}
+				h={"min"}
 				pos={"absolute"}
 				right={-16}
 				zIndex={"hide"}

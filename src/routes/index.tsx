@@ -1,5 +1,10 @@
-import { Heading } from "@/components/ui/info/heading/heading";
+import { ButtonLink } from "@/components/ui/form/button/button";
+import { ArrowUpRightIcon } from "lucide-react";
 
 export default function HomePage() {
-	return <Heading>{"todo!()"}</Heading>;
+	return (
+		<ButtonLink colorPalette={"brand"} href="/kitchen-sink">
+			Go to kitchen sink <ArrowUpRightIcon />
+		</ButtonLink>
+	);
 }

@@ -13,6 +13,9 @@ export default defineConfig({
 	// Files to exclude
 	exclude: [],
 
+	// The value separator used in the generated class names.
+	separator: "-",
+
 	// Useful for theme customization
 	theme: {
 		extend: {
@@ -65,6 +68,9 @@ export default defineConfig({
 				},
 			},
 			tokens: {
+				fonts: {
+					body: { value: "'Geist', sans-serif" },
+				},
 				colors: {
 					brand: {
 						50: {
@@ -118,10 +124,10 @@ export default defineConfig({
 	// Global css
 	globalCss: {
 		extend: {
-			body: {
+			"html, body": {
 				bg: "bg",
 				color: "fg",
-				fontFamily: "Geist, sans-serif",
+				fontFamily: "body",
 			},
 		},
 	},

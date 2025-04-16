@@ -1,7 +1,7 @@
 import { Heading } from "@/components/ui/info/heading/heading";
 import { Image } from "@/components/ui/info/image/image";
-import { Span, Text } from "@/components/ui/info/text/text";
-import { Container, HStack, Stack, VStack } from "@/styled-system/jsx";
+import { Text } from "@/components/ui/info/text/text";
+import { Container, HStack, Stack, styled, VStack } from "@/styled-system/jsx";
 
 export default function LandingFeatures() {
 	return (
@@ -21,7 +21,7 @@ export default function LandingFeatures() {
 					<Stack maxW="2xl">
 						<Heading size="4xl">
 							Complete{" "}
-							<Span
+							<styled.span
 								bgClip={"text"}
 								bgGradient={"to-r"}
 								gradientFrom={"red.fg"}
@@ -29,7 +29,7 @@ export default function LandingFeatures() {
 								color="transparent"
 							>
 								quests
-							</Span>{" "}
+							</styled.span>{" "}
 							and get currency for it
 						</Heading>
 						<Text>
@@ -57,7 +57,7 @@ export default function LandingFeatures() {
 					<Stack maxW="2xl">
 						<Heading size="4xl">
 							Reach the{" "}
-							<Span
+							<styled.span
 								bgClip={"text"}
 								bgGradient={"to-r"}
 								gradientFrom={"cyan.fg"}
@@ -65,7 +65,7 @@ export default function LandingFeatures() {
 								color="transparent"
 							>
 								top
-							</Span>{" "}
+							</styled.span>{" "}
 							in the leaderboard
 						</Heading>
 						<Text>

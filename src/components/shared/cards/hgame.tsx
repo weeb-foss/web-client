@@ -1,8 +1,4 @@
-import {
-	AvatarFallback,
-	AvatarImage,
-	AvatarRoot,
-} from "@/components/ui/info/avatar/avatar";
+import { AvatarFallback, AvatarRoot } from "@/components/ui/info/avatar/avatar";
 import { Heading } from "@/components/ui/info/heading/heading";
 import { Text } from "@/components/ui/info/text/text";
 import { Box, Divider, Flex, HStack, Stack, styled } from "@/styled-system/jsx";
