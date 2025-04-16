@@ -13,6 +13,7 @@
 	},
 	"dependencies": {
 		"@base-ui-components/react": "1.0.0-alpha.7",
+		"@chakra-ui/panda-preset": "^3.16.0",
 		"lucide-react": "^0.487.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",

@@ -1,13 +1,13 @@
+import IconWrapper from "@/components/shared/misc/icon-wrapper";
 import { Button } from "@/components/ui/form/button/button";
 import { Heading } from "@/components/ui/info/heading/heading";
 import { Image } from "@/components/ui/info/image/image";
 import { Span, Text } from "@/components/ui/info/text/text";
-import { Center, VStack } from "@/styled-system/jsx";
-import { ArrowUpRightIcon } from "lucide-react";
+import { Center, HStack, VStack } from "@/styled-system/jsx";
 
 export default function LandingHero() {
 	return (
-		<Center h="70vh" pos="relative" overflowX={"hidden"}>
+		<Center h="60vh" pos="relative" overflowX={"hidden"} overflowY={"clip"}>
 			<Image
 				src="/assets/apex-char.png"
 				alt="landing left image"
@@ -32,8 +32,8 @@ export default function LandingHero() {
 					<Span
 						bgClip={"text"}
 						bgGradient={"to-r"}
-						gradientFrom={"brand"}
-						gradientTo={"brand.highlight"}
+						gradientFrom={"brand.fg"}
+						gradientTo={"brand.solid"}
 						color="transparent"
 					>
 						gaming
@@ -48,9 +48,12 @@ export default function LandingHero() {
 				</Text>
 				<Button levitate pill variant="secondary">
 					Start your journey
-					<ArrowUpRightIcon />
+					<IconWrapper name="arrow-up-right" />
 				</Button>
-				<Text size="xs">Not sure yet? Scroll down</Text>
+				<HStack>
+					<Text size="xs">Not sure yet? Scroll down</Text>
+					<IconWrapper name="mouse" w={5} h={5} color="fg.muted" />
+				</HStack>
 			</VStack>
 			<Image
 				src="/assets/fragpunk-char.png"

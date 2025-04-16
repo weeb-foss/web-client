@@ -7,7 +7,7 @@ export const Text = styled("p", text);
 export const TextLink = styled(Link, {
 	base: {
 		...text.raw({}),
-		color: "text",
+		color: "fg",
 		_hover: {
 			textDecoration: "underline",
 		},

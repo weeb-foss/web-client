@@ -10,10 +10,11 @@ import {
 	menuGroupLabel,
 	menuRadioItem,
 	menuCheckboxItem,
+	menuTrigger,
 } from "./menu.style";
 
 export const MenuRoot = styled(Menu.Root);
-export const MenuTrigger = styled(Menu.Trigger);
+export const MenuTrigger = styled(Menu.Trigger, menuTrigger);
 export const MenuPortal = styled(Menu.Portal);
 export const MenuBackdrop = styled(Menu.Backdrop, menuBackdrop);
 export const MenuPositioner = styled(Menu.Positioner, menuPositioner);

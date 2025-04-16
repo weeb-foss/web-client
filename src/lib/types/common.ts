@@ -1,3 +1,4 @@
+import type { Styles } from "@/styled-system/css";
 import type { RefObject } from "react";
 
 export type StateChangeReason =
@@ -18,3 +19,5 @@ export type WithDialogProps<T = unknown> = T & {
 	) => void;
 	focusRef?: RefObject<HTMLButtonElement | null>;
 };
+
+export type WithStyles<T = unknown> = T & Styles;

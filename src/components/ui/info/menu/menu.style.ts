@@ -1,6 +1,12 @@
 import { cva } from "@/styled-system/css";
 import type { RecipeVariantProps } from "@/styled-system/css";
 
+export const menuTrigger = cva({
+	base: {
+		cursor: "pointer",
+	},
+});
+
 export const menuBackdrop = cva({
 	base: {
 		pos: "fixed",
@@ -21,11 +27,10 @@ export const menuPositioner = cva({
 export const menuPopup = cva({
 	base: {
 		alignSelf: "start",
-		mt: 2,
+		m: 2,
 		outline: "none",
-		bg: "background.subtle",
+		bg: "bg.subtle",
 		rounded: "lg",
-		boxShadow: "lg",
 		py: "2",
 		minW: "48",
 		maxW: "sm",
@@ -85,12 +90,12 @@ export const menuItem = cva({
 		py: 1,
 		cursor: "pointer",
 		color: {
-			base: "text.subtle",
-			_hover: "text",
+			base: "fg.muted",
+			_hover: "fg",
 		},
 		bg: {
-			base: "background.subtle",
-			_hover: "background.content",
+			base: "bg.subtle",
+			_hover: "bg.muted",
 		},
 		"& svg": {
 			w: 5,
@@ -113,7 +118,7 @@ export const menuGroupLabel = cva({
 		py: "1",
 		fontSize: "xs",
 		fontWeight: "bold",
-		color: "text.muted",
+		color: "fg.muted",
 		textTransform: "uppercase",
 		letterSpacing: "wider",
 	},
@@ -124,7 +129,7 @@ export const menuRadioItem = cva({
 		px: "3",
 		py: "2",
 		cursor: "pointer",
-		color: "text",
+		color: "fg",
 		_hover: { bg: "border" },
 		_focus: { bg: "border" },
 	},
@@ -135,12 +140,13 @@ export const menuCheckboxItem = cva({
 		px: "3",
 		py: "2",
 		cursor: "pointer",
-		color: "text",
+		color: "fg",
 		_hover: { bg: "border" },
 		_focus: { bg: "border" },
 	},
 });
 
+// todo: all variant types
 export type MenuItemVariants = RecipeVariantProps<typeof menuItem>;
 export type MenuRadioItemVariants = RecipeVariantProps<typeof menuRadioItem>;
 export type MenuCheckboxItemVariants = RecipeVariantProps<

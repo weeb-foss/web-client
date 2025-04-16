@@ -25,36 +25,29 @@ export const button = cva({
 		variant: {
 			primary: {
 				bg: {
-					base: "brand",
-					_hover: "brand.hover",
-					_active: "brand.highlight",
+					base: "brand.fg",
+					_hover: "brand.solid",
 				},
-				color: "background",
+				color: "brand.subtle",
 			},
 			secondary: {
 				bg: {
-					base: "background.content",
-					_hover: "background.surface",
-					_active: "background.content",
-				},
-				color: {
-					base: "text.subtle",
+					base: "bg.muted",
+					_hover: "bg.emphasized",
 				},
 			},
 			ghost: {
 				bg: {
 					base: "transparent",
-					_hover: "background.content",
+					_hover: "bg.muted",
 				},
-				color: "text",
+				color: "fg",
 			},
 			error: {
 				bg: {
-					base: "error",
-					_hover: "error/90",
-					_active: "error/70",
+					base: "bg.error",
 				},
-				color: "text",
+				color: "fg.error",
 			},
 			link: {
 				_hover: {

@@ -4,15 +4,20 @@ import type { HeadingVariants } from "@/components/ui/info/heading/heading.style
 import { Span, Text } from "@/components/ui/info/text/text";
 import type { TextVariants } from "@/components/ui/info/text/text.style";
 import { Container, Grid, GridItem, Stack } from "@/styled-system/jsx";
-import config from "../../../brand.preset";
+import config from "../../../panda.config";
+import preset from "@chakra-ui/panda-preset";
 import HGameCard from "@/components/shared/cards/hgame";
 
 const headingSizes = ["lg", "xl", "2xl", "3xl", "4xl", "5xl", "6xl"];
 const textSizes = ["xs", "sm", "md", "lg"];
 
 export default function KitchenSinkPage() {
-	// biome-ignore lint/style/noNonNullAssertion: fuck off this is a test
-	const colors = Object.entries(config.theme?.extend?.tokens?.colors!);
+	const colors = Object.entries({
+		// biome-ignore lint/style/noNonNullAssertion: fuck off this is a test
+		...config.theme?.extend?.tokens?.colors!,
+		// biome-ignore lint/style/noNonNullAssertion: fuck off this is a test
+		...preset.theme?.extend?.tokens?.colors!,
+	});
 	return (
 		<Container py={24}>
 			<Stack>

@@ -1,21 +1,31 @@
 import { Heading } from "@/components/ui/info/heading/heading";
 import { Image } from "@/components/ui/info/image/image";
 import { Span, Text } from "@/components/ui/info/text/text";
-import { Container, HStack, Stack } from "@/styled-system/jsx";
+import { Container, HStack, Stack, VStack } from "@/styled-system/jsx";
 
 export default function LandingFeatures() {
 	return (
 		<Container w="full">
-			<Stack>
-				<HStack h={"xs"} justifyContent={"space-between"}>
+			<Stack gap={12}>
+				<HStack
+					h={{
+						md: "xs",
+						base: "unset",
+					}}
+					justifyContent={"space-between"}
+					flexDir={{
+						md: "row",
+						base: "column",
+					}}
+				>
 					<Stack maxW="2xl">
 						<Heading size="4xl">
 							Complete{" "}
 							<Span
 								bgClip={"text"}
 								bgGradient={"to-r"}
-								gradientFrom={"brand"}
-								gradientTo={"brand.highlight"}
+								gradientFrom={"red.fg"}
+								gradientTo={"red.solid"}
 								color="transparent"
 							>
 								quests
@@ -34,9 +44,15 @@ export default function LandingFeatures() {
 					</HStack>
 				</HStack>
 				<HStack
-					h={"xs"}
+					h={{
+						md: "xs",
+						base: "unset",
+					}}
 					justifyContent={"space-between"}
-					flexDir={"row-reverse"}
+					flexDir={{
+						md: "row-reverse",
+						base: "column",
+					}}
 				>
 					<Stack maxW="2xl">
 						<Heading size="4xl">
@@ -44,8 +60,8 @@ export default function LandingFeatures() {
 							<Span
 								bgClip={"text"}
 								bgGradient={"to-r"}
-								gradientFrom={"accent.sky/80"}
-								gradientTo={"accent.sky"}
+								gradientFrom={"cyan.fg"}
+								gradientTo={"cyan.solid"}
 								color="transparent"
 							>
 								top
@@ -67,6 +83,15 @@ export default function LandingFeatures() {
 						/>
 					</HStack>
 				</HStack>
+				<VStack mx="auto" maxW="xl" textAlign={"center"}>
+					<Heading>And more coming soon...</Heading>
+					<Text>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+						dolores repellendus deleniti alias, ipsum sunt mollitia. Nam,
+						ratione quod unde obcaecati tempora, incidunt atque fuga ad,
+						accusamus laudantium voluptates minima.
+					</Text>
+				</VStack>
 			</Stack>
 		</Container>
 	);

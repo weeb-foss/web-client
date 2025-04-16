@@ -8,7 +8,7 @@ export const avatarRoot = cva({
 		alignItems: "center",
 		justifyContent: "center",
 		rounded: "full",
-		bg: "background.subtle",
+		bg: "bg.muted",
 	},
 	variants: {
 		size: {
@@ -31,7 +31,7 @@ export const avatarFallback = cva({
 	base: {
 		color: "text.subtle",
 		fontWeight: "bold",
-		bg: "background.content",
+		bg: "bg.muted",
 		w: "full",
 		h: "full",
 		display: "flex",

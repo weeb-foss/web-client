@@ -14,7 +14,7 @@ export default function LandingLayout({
 				<Heading size="xl">Orbix</Heading>
 				<Button>Get the bot</Button>
 			</LandingHeader>
-			<Box>{children}</Box>
+			<Box py={12}>{children}</Box>
 		</Stack>
 	);
 }

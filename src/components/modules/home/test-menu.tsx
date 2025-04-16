@@ -1,6 +1,6 @@
 import Arrow from "@/components/icons/arrow";
 import NewPostModal from "@/components/shared/modals/new-post";
-import { Button } from "@/components/ui/form/button/button";
+import { AvatarImage, AvatarRoot } from "@/components/ui/info/avatar/avatar";
 import { Badge } from "@/components/ui/info/badge/badge";
 import {
 	MenuRoot,
@@ -32,11 +32,8 @@ export default function TestMenu() {
 	return (
 		<Fragment>
 			<MenuRoot>
-				<MenuTrigger
-					ref={menuTriggerRef}
-					render={<Button pill levitate variant="secondary" />}
-				>
-					Open test menu
+				<MenuTrigger ref={menuTriggerRef} render={<AvatarRoot />}>
+					<AvatarImage src="/assets/simxnet.png" alt="simxnet's avatar" />
 				</MenuTrigger>
 				<MenuPortal>
 					<MenuPositioner>
@@ -70,12 +67,10 @@ export default function TestMenu() {
 									<BellDotIcon />
 									Notifications
 								</MenuItem>
-								<MenuItem
-									_hover={{ bg: "accent.gold/10!", color: "accent.gold!" }}
-								>
+								<MenuItem _hover={{ bg: "yellow.subtle", color: "yellow.fg" }}>
 									<SparklesIcon />
 									Premium
-									<Badge variant="soft" color="accent.gold">
+									<Badge variant="soft" color="yellow.fg">
 										NEW
 									</Badge>
 								</MenuItem>
@@ -83,15 +78,11 @@ export default function TestMenu() {
 							<MenuSeparator />
 							<MenuGroup>
 								<MenuGroupLabel>Risky</MenuGroupLabel>
-								<MenuItem
-									_hover={{ bg: "accent.error/10!", color: "accent.error!" }}
-								>
+								<MenuItem _hover={{ bg: "bg.error", color: "fg.error" }}>
 									<LogOutIcon />
 									Logout
 								</MenuItem>
-								<MenuItem
-									_hover={{ bg: "accent.error/10!", color: "accent.error!" }}
-								>
+								<MenuItem _hover={{ bg: "bg.error", color: "fg.error" }}>
 									<Trash2Icon />
 									Delete profile
 								</MenuItem>

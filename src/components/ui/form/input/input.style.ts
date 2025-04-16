@@ -11,9 +11,9 @@ export const input = cva({
 		border: "1px solid",
 		borderColor: "border",
 		bg: {
-			base: "background.subtle",
-			_hover: "background.content",
-			_focus: "background.content",
+			base: "bg.subtle",
+			_hover: "bg.muted",
+			_focus: "bg.emphasized",
 		},
 		color: "text.subtle",
 		fontSize: "sm",

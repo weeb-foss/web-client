@@ -10,6 +10,7 @@ export default function HGameCard() {
 	return (
 		<Box
 			bgSize={"cover"}
+			border="1px solid {colors.border}"
 			w="1/4"
 			h={"2/3"}
 			rounded="xl"
@@ -30,16 +31,16 @@ export default function HGameCard() {
 				p={3}
 				mt={16}
 				bgGradient={"to-t"}
-				gradientFrom={"background.subtle"}
-				gradientVia={"background.subtle"}
+				gradientFrom={"bg.subtle"}
+				gradientVia={"bg.subtle"}
 				gradientTo={"transparent"}
 				roundedBottom={"calc(var(--orb-radii-xl) - 0.10)"}
 			>
 				<Heading>Overwatch</Heading>
 				<HStack gap={1}>
-					<UserRoundIcon color={"var(--orb-colors-brand)"} size={16} />
+					<UserRoundIcon color={"var(--orb-colors-brand-fg)"} size={16} />
 					<Text size="sm">
-						<Span color="brand">2,500</Span> users are playing right now
+						<Span color="brand.fg">2,500</Span> users are playing right now
 					</Text>
 				</HStack>
 				<Divider borderColor={"border"} w="12" />
@@ -47,14 +48,14 @@ export default function HGameCard() {
 					<HStack spaceX={-5}>
 						{[...Array(3)].map((key) => (
 							<AvatarRoot
-								ring={"3px solid {colors.background.subtle}"}
+								ring={"3px solid {colors.bg.subtle}"}
 								key={key}
 								size="sm"
 							>
 								<AvatarFallback size="xs">CH</AvatarFallback>
 							</AvatarRoot>
 						))}
-						<AvatarRoot ring={"3px solid {colors.background.subtle}"} size="sm">
+						<AvatarRoot ring={"3px solid {colors.bg.subtle}"} size="sm">
 							<AvatarFallback size="xs">+1</AvatarFallback>
 						</AvatarRoot>
 					</HStack>

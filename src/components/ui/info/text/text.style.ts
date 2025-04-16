@@ -8,7 +8,7 @@ export const text = cva({
 		letterSpacing: "0",
 		textDecoration: "None",
 		textTransform: "None",
-		color: "text.subtle",
+		color: "fg.muted",
 		margin: "0",
 	},
 	variants: {

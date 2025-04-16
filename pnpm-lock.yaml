@@ -11,6 +11,9 @@ importers:
       '@base-ui-components/react':
         specifier: 1.0.0-alpha.7
         version: 1.0.0-alpha.7(@types/react@19.1.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@chakra-ui/panda-preset':
+        specifier: ^3.16.0
+        version: 3.16.0
       lucide-react:
         specifier: ^0.487.0
         version: 0.487.0(react@19.1.0)
@@ -192,6 +195,9 @@ packages:
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
+
+  '@chakra-ui/panda-preset@3.16.0':
+    resolution: {integrity: sha512-fOSI8WIw+vrRReaKTJgMtahIYLgM9Y0UaJZvi3k17mziBfJiV87zjnRz3I7u9JlCkBQJEeB6D5uvhE3v+K96DQ==}
 
   '@clack/core@0.4.1':
     resolution: {integrity: sha512-Pxhij4UXg8KSr7rPek6Zowm+5M22rbd2g1nfojHJkxp5YkFqiZ2+YLEM/XGVIzvGOcM0nqjIFxrpDwWRZYWYjA==}
@@ -472,6 +478,9 @@ packages:
 
   '@pandacss/token-dictionary@0.53.3':
     resolution: {integrity: sha512-8P3Ka/B16yIGkYPTFJRwyZblocijy6nJvzD4WQlPzosZUq/06CfsqmVFXcb7VpbNXIyzQaxgyG1Beg4+/+HVcQ==}
+
+  '@pandacss/types@0.51.1':
+    resolution: {integrity: sha512-yy8wr6LjdwRZUaid37CE/TxJyxkD1cyTj8OQfwSFxwfxSLsupzX00/IoNw4OJyfm/inTCmcj7DfSVmRrAsi4Bw==}
 
   '@pandacss/types@0.53.3':
     resolution: {integrity: sha512-ZGBFZ2jYKURhKha8QqXRMeNCMzu3+vq9qICvbeiXcKrnhu00YzRTUdVCyhGm9CA0Nroq0wftNgdAqzVwwgvcRA==}
@@ -1615,6 +1624,10 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
+  '@chakra-ui/panda-preset@3.16.0':
+    dependencies:
+      '@pandacss/types': 0.51.1
+
   '@clack/core@0.4.1':
     dependencies:
       picocolors: 1.1.1
@@ -1962,6 +1975,8 @@ snapshots:
       '@pandacss/shared': 0.53.3
       '@pandacss/types': 0.53.3
       ts-pattern: 5.0.8
+
+  '@pandacss/types@0.51.1': {}
 
   '@pandacss/types@0.53.3': {}
 

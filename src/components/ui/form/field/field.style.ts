@@ -32,7 +32,7 @@ export const fieldLabel = cva({
 				_after: {
 					content: '"*"',
 					ml: "1",
-					color: "accent.error",
+					color: "fg.error",
 				},
 			},
 		},
@@ -55,21 +55,21 @@ export const fieldControl = cva({
 export const fieldDescription = cva({
 	base: {
 		fontSize: "xs",
-		color: "text.muted",
+		color: "fg.muted",
 	},
 });
 
 export const fieldError = cva({
 	base: {
 		fontSize: "xs",
-		color: "error",
+		color: "fg.error",
 	},
 });
 
 export const fieldValidity = cva({
 	base: {
 		fontSize: "xs",
-		color: "accents.green",
+		color: "fg.success",
 	},
 });
 

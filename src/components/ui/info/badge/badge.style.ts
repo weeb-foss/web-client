@@ -18,7 +18,7 @@ export const badge = cva({
 		variant: {
 			solid: {
 				bg: "currentColor",
-				color: "background",
+				color: "bg",
 			},
 			soft: {
 				bg: "currentColor/10",

@@ -34,10 +34,10 @@ export default function NewPostModal({
 						<Span
 							p={0.5}
 							bgGradient={"to-br"}
-							gradientFrom={"brand.hover"}
-							gradientTo={"brand.highlight"}
+							gradientFrom={"brand.fg"}
+							gradientTo={"brand.solid"}
 							rounded={"lg"}
-							color="background"
+							color="bg"
 						>
 							<PlusIcon size={44} />
 						</Span>
@@ -58,7 +58,7 @@ export default function NewPostModal({
 							rounded="lg"
 							cursor={"pointer"}
 							_hover={{
-								bg: "background.content",
+								bg: "bg.muted",
 							}}
 						>
 							<Center>

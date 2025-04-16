@@ -24,7 +24,7 @@ export const dialogPopup = cva({
 		maxW: "lg",
 		transform: "translate(-50%, -50%)",
 		rounded: "xl",
-		bg: "background.subtle",
+		bg: "bg.subtle",
 		p: "6",
 		color: "text",
 		border: "1px solid {colors.border}",
@@ -46,7 +46,7 @@ export const dialogDescription = cva({
 		mb: 6,
 		mt: 2,
 		fontSize: "base",
-		color: "text.subtle",
+		color: "fg.muted",
 	},
 });
 
