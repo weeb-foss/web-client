@@ -13,10 +13,10 @@ export const text = cva({
 	},
 	variants: {
 		size: {
-			lg: { fontSize: "lg" },
-			md: { fontSize: "md" },
-			sm: { fontSize: "sm" },
-			xs: { fontSize: "xs" },
+			lg: { textStyle: "lg" },
+			md: { textStyle: "md" },
+			sm: { textStyle: "sm" },
+			xs: { textStyle: "xs" },
 		},
 	},
 	defaultVariants: {

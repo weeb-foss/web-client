@@ -2,8 +2,8 @@ import IconWrapper from "@/components/shared/misc/icon-wrapper";
 import { Button } from "@/components/ui/form/button/button";
 import { Heading } from "@/components/ui/info/heading/heading";
 import { Image } from "@/components/ui/info/image/image";
-import { Span, Text } from "@/components/ui/info/text/text";
-import { Center, HStack, VStack } from "@/styled-system/jsx";
+import { Text } from "@/components/ui/info/text/text";
+import { Center, HStack, styled, VStack } from "@/styled-system/jsx";
 
 export default function LandingHero() {
 	return (
@@ -29,7 +29,7 @@ export default function LandingHero() {
 				/>
 				<Heading size="6xl">
 					Enhance your{" "}
-					<Span
+					<styled.span
 						bgClip={"text"}
 						bgGradient={"to-r"}
 						gradientFrom={"brand.fg"}
@@ -37,7 +37,7 @@ export default function LandingHero() {
 						color="transparent"
 					>
 						gaming
-					</Span>{" "}
+					</styled.span>{" "}
 					experience
 				</Heading>
 				<Text>
@@ -46,7 +46,7 @@ export default function LandingHero() {
 					repudiandae incidunt quasi consequuntur, veniam placeat veritatis
 					necessitatibus minima excepturi dolorem sunt!
 				</Text>
-				<Button levitate pill variant="secondary">
+				<Button levitate pill variant="subtle" colorPalette={"bg"}>
 					Start your journey
 					<IconWrapper name="arrow-up-right" />
 				</Button>

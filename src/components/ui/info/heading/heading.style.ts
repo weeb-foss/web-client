@@ -12,31 +12,31 @@ export const heading = cva({
 	variants: {
 		size: {
 			"6xl": {
-				fontSize: "6xl",
+				textStyle: "6xl",
 				fontWeight: "800",
 			},
 			"5xl": {
-				fontSize: "5xl",
+				textStyle: "5xl",
 				fontWeight: "800",
 			},
 			"4xl": {
-				fontSize: "4xl",
+				textStyle: "4xl",
 				fontWeight: "800",
 			},
 			"3xl": {
-				fontSize: "3xl",
+				textStyle: "3xl",
 				fontWeight: "800",
 			},
 			"2xl": {
-				fontSize: "2xl",
+				textStyle: "2xl",
 				fontWeight: "700",
 			},
 			xl: {
-				fontSize: "xl",
+				textStyle: "xl",
 				fontWeight: "700",
 			},
 			lg: {
-				fontSize: "lg",
+				textStyle: "lg",
 				fontWeight: "600",
 			},
 		},

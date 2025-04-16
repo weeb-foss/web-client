@@ -16,9 +16,15 @@ import {
 	DialogDescription,
 } from "@/components/ui/info/dialog/dialog";
 import { Heading } from "@/components/ui/info/heading/heading";
-import { Span } from "@/components/ui/info/text/text";
 import type { WithDialogProps } from "@/lib/types/common";
-import { Stack, Center, VStack, Box, HStack } from "@/styled-system/jsx";
+import {
+	Stack,
+	Center,
+	VStack,
+	Box,
+	HStack,
+	styled,
+} from "@/styled-system/jsx";
 import { PlusIcon, ImagePlusIcon } from "lucide-react";
 
 export default function NewPostModal({
@@ -31,7 +37,7 @@ export default function NewPostModal({
 				<DialogBackdrop />
 				<DialogPopup textAlign={"center"} finalFocus={focusRef}>
 					<Center mb={2}>
-						<Span
+						<styled.span
 							p={0.5}
 							bgGradient={"to-br"}
 							gradientFrom={"brand.fg"}
@@ -40,7 +46,7 @@ export default function NewPostModal({
 							color="bg"
 						>
 							<PlusIcon size={44} />
-						</Span>
+						</styled.span>
 					</Center>
 					<DialogTitle>Create a new post</DialogTitle>
 					<DialogDescription>
@@ -86,11 +92,14 @@ export default function NewPostModal({
 							</FieldRoot>
 						</FieldsetRoot>
 						<HStack justifyContent={"space-between"}>
-							<Button variant="secondary">Nevermind</Button>
-							<Button>Submit</Button>
+							<Button colorPalette={"bg"} variant="subtle">
+								Nevermind
+							</Button>
+							<Button colorPalette={"brand"}>Submit</Button>
 						</HStack>
 					</Stack>
 				</DialogPopup>
+				<Button>XD</Button>
 			</DialogPortal>
 		</DialogRoot>
 	);

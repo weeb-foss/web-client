@@ -97,7 +97,7 @@ export const menuItem = cva({
 			base: "bg.subtle",
 			_hover: "bg.muted",
 		},
-		"& svg": {
+		_icon: {
 			w: 5,
 			h: 5,
 		},
@@ -146,8 +146,14 @@ export const menuCheckboxItem = cva({
 	},
 });
 
-// todo: all variant types
+export type MenuTriggerVariants = RecipeVariantProps<typeof menuTrigger>;
+export type MenuBackdropVariants = RecipeVariantProps<typeof menuBackdrop>;
+export type MenuPositionerVariants = RecipeVariantProps<typeof menuPositioner>;
+export type MenuPopupVariants = RecipeVariantProps<typeof menuPopup>;
+export type MenuArrowVariants = RecipeVariantProps<typeof menuArrow>;
 export type MenuItemVariants = RecipeVariantProps<typeof menuItem>;
+export type MenuSeparatorVariants = RecipeVariantProps<typeof menuSeparator>;
+export type MenuGroupLabelVariants = RecipeVariantProps<typeof menuGroupLabel>;
 export type MenuRadioItemVariants = RecipeVariantProps<typeof menuRadioItem>;
 export type MenuCheckboxItemVariants = RecipeVariantProps<
 	typeof menuCheckboxItem

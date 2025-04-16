@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 @layer reset, base, tokens, recipes, utilities;
 
+.glare-wrapper {
+	border-radius: var(--orb-radii-lg) !important;
+}
+
 .mask-to-b {
 	mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }

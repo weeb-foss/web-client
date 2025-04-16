@@ -23,37 +23,64 @@ export const button = cva({
 	},
 	variants: {
 		variant: {
-			primary: {
-				bg: {
-					base: "brand.fg",
-					_hover: "brand.solid",
+			solid: {
+				bg: "colorPalette.solid",
+				color: "colorPalette.contrast",
+				borderColor: "transparent",
+				_hover: {
+					bg: "colorPalette.solid/90",
 				},
-				color: "brand.subtle",
+				_expanded: {
+					bg: "colorPalette.solid/90",
+				},
 			},
-			secondary: {
-				bg: {
-					base: "bg.muted",
-					_hover: "bg.emphasized",
+			subtle: {
+				bg: "colorPalette.subtle",
+				color: "colorPalette.fg",
+				borderColor: "transparent",
+				_hover: {
+					bg: "colorPalette.muted",
+				},
+				_expanded: {
+					bg: "colorPalette.muted",
+				},
+			},
+			surface: {
+				bg: "colorPalette.subtle",
+				color: "colorPalette.fg",
+				shadow: "0 0 0px 1px var(--shadow-color)",
+				shadowColor: "colorPalette.muted",
+				_hover: {
+					bg: "colorPalette.muted",
+				},
+				_expanded: {
+					bg: "colorPalette.muted",
+				},
+			},
+
+			outline: {
+				borderWidth: "1px",
+				borderColor: "colorPalette.muted",
+				color: "colorPalette.fg",
+				_hover: {
+					bg: "colorPalette.subtle",
+				},
+				_expanded: {
+					bg: "colorPalette.subtle",
 				},
 			},
 			ghost: {
-				bg: {
-					base: "transparent",
-					_hover: "bg.muted",
-				},
-				color: "fg",
-			},
-			error: {
-				bg: {
-					base: "bg.error",
-				},
-				color: "fg.error",
-			},
-			link: {
+				bg: "transparent",
+				color: "colorPalette.fg",
 				_hover: {
-					opacity: 0.7,
-					textDecoration: "underline",
+					bg: "colorPalette.subtle",
 				},
+				_expanded: {
+					bg: "colorPalette.subtle",
+				},
+			},
+			plain: {
+				color: "colorPalette.fg",
 			},
 		},
 		size: {
@@ -66,7 +93,7 @@ export const button = cva({
 				px: 4,
 				py: 1.5,
 				textStyle: "sm",
-				"& svg": {
+				_icon: {
 					w: 5,
 					h: 5,
 				},
@@ -75,7 +102,7 @@ export const button = cva({
 				px: 4,
 				py: 2,
 				textStyle: "base",
-				"& svg": {
+				_icon: {
 					w: 5,
 					h: 5,
 				},
@@ -112,9 +139,10 @@ export const button = cva({
 		},
 	},
 	defaultVariants: {
-		variant: "primary",
+		variant: "solid",
 		size: "md",
 		pill: false,
+		levitate: false,
 	},
 });
 
