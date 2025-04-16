@@ -77,7 +77,6 @@ export default function HGameCard() {
 									key={key}
 									size="sm"
 								>
-									<AvatarImage src="https://cdn.discordapp.com/avatars/462780441594822687/91b3a9a94c1196a9816c996191916737.webp?size=80" />
 									<AvatarFallback size="xs">CH</AvatarFallback>
 								</AvatarRoot>
 							))}
