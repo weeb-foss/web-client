@@ -30,10 +30,16 @@ export default function HGameCard({
 				border="1px solid {colors.border}"
 				cursor={"pointer"}
 				w="xs"
+				bg="bg.subtle"
 				h={"2/3"}
 				rounded="xl"
 				pos="relative"
 				overflow={"hidden"}
+				ring={"2px solid transparent"}
+				ringOffset={0.5}
+				_hover={{
+					ringColor: "border.muted",
+				}}
 			>
 				<Box
 					bg="brand"
@@ -42,7 +48,6 @@ export default function HGameCard({
 					className="mask-to-b"
 					pos="absolute"
 					bgSize={"cover"}
-					zIndex={"hide"}
 					bgRepeat={"no-repeat"}
 					style={{ backgroundImage: `url('${backgroundAsset}')` }}
 				/>
@@ -50,6 +55,7 @@ export default function HGameCard({
 					<Image w={28} h="min" src={logoAsset} alt={title} />
 				</Flex>
 				<Stack
+					zIndex={"base"}
 					p={3}
 					mt={20}
 					bgGradient={"to-t"}

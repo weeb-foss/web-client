@@ -11,7 +11,8 @@ export default function Tilt({ children, ...props }: ReactParallaxTiltProps) {
 			tiltMaxAngleX={10}
 			tiltMaxAngleY={10}
 			glareEnable
-			glareMaxOpacity={0.2}
+			glareMaxOpacity={0.08}
+			glarePosition="all"
 			{...props}
 		>
 			{children}

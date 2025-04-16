@@ -128,6 +128,8 @@ export default defineConfig({
 				bg: "bg",
 				color: "fg",
 				fontFamily: "body",
+				"-webkit-font-smoothing": "antialiased",
+				"-moz-osx-font-smoothing": "grayscale",
 			},
 		},
 	},
