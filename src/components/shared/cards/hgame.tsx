@@ -6,10 +6,23 @@ import Tilt from "../misc/tilt";
 import { Badge } from "@/components/ui/deco/badge/badge";
 import IconWrapper from "../misc/icon-wrapper";
 import { Image } from "@/components/ui/info/image/image";
+import { Show } from "../util/show";
 
-// todo
-// merely conceptual component
-export default function HGameCard() {
+// todo: in the future, this interface should be connected with API
+interface HGameCardProps {
+	backgroundAsset: string;
+	logoAsset: string;
+	title: string;
+	isNew: boolean;
+}
+
+// mocked component
+export default function HGameCard({
+	backgroundAsset,
+	logoAsset,
+	title,
+	isNew,
+}: HGameCardProps) {
 	return (
 		<Tilt>
 			<Box
@@ -31,19 +44,14 @@ export default function HGameCard() {
 					bgSize={"cover"}
 					zIndex={"hide"}
 					bgRepeat={"no-repeat"}
-					style={{ backgroundImage: "url('/assets/games/sh2.png')" }}
+					style={{ backgroundImage: `url('${backgroundAsset}')` }}
 				/>
-				<Flex ml="auto" w="full" p={2} justifyContent={"end"} pos="absolute">
-					<Image
-						w={44}
-						h="min"
-						src="/assets/games/sh2logo.png"
-						alt="silent hill 2"
-					/>
+				<Flex ml="auto" w="full" p={3} justifyContent={"end"} pos="absolute">
+					<Image w={28} h="min" src={logoAsset} alt={title} />
 				</Flex>
 				<Stack
 					p={3}
-					mt={16}
+					mt={20}
 					bgGradient={"to-t"}
 					gradientFrom={"bg.subtle"}
 					gradientVia={"bg.subtle"}
@@ -51,11 +59,13 @@ export default function HGameCard() {
 					roundedBottom={"calc(var(--orb-radii-xl) - 0.10)"}
 				>
 					<HStack>
-						<Heading>Silent Hill: 2</Heading>
-						<Badge variant="soft" colorPalette={"brand"}>
-							<IconWrapper name="flame" />
-							NEW
-						</Badge>
+						<Heading>{title}</Heading>
+						<Show when={isNew}>
+							<Badge variant="soft" colorPalette={"brand"}>
+								<IconWrapper name="flame" />
+								NEW
+							</Badge>
+						</Show>
 					</HStack>
 					<HStack gap={1}>
 						<IconWrapper name="users-round" color="brand.fg" w={4} h={4} />
