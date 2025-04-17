@@ -1,4 +1,4 @@
-import IconWrapper from "@/components/shared/misc/icon-wrapper";
+import { IconWrapper } from "@/components/shared/misc/icon-wrapper";
 import { Button } from "@/components/ui/form/button/button";
 import { Heading } from "@/components/ui/info/heading/heading";
 import { Image } from "@/components/ui/info/image/image";

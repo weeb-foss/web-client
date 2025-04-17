@@ -17,7 +17,9 @@ import { RotateCwIcon, ScrollIcon } from "lucide-react";
 import { Button } from "@/components/ui/form/button/button";
 import { For } from "@/components/shared/util/for";
 import HGameCard from "@/components/shared/cards/hgame";
+import TestMenu from "@/components/modules/test/test-menu";
 
+// todo: delete this shit
 const testGames = [
 	{
 		backgroundAsset: "/assets/games/silenthill2/background.png",
@@ -49,11 +51,12 @@ export default function KitchenSinkPage() {
 	return (
 		<Container py={24}>
 			<Stack gap={12}>
+				<TestMenu />
 				<Grid columns={4}>
 					<For each={testGames}>
 						{(game) => (
 							<GridItem key={game.title}>
-								<HGameCard {...game} />
+								<HGameCard tilt {...game} />
 							</GridItem>
 						)}
 					</For>

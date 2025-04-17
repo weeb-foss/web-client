@@ -3,15 +3,15 @@ import ReactParallaxTilt, {
 	type ReactParallaxTiltProps,
 } from "react-parallax-tilt";
 
+// todo: convert this component into a panda factory component
 export default function Tilt({ children, ...props }: ReactParallaxTiltProps) {
 	return (
 		<ReactParallaxTilt
-			scale={1.01}
-			className={css({ rounded: "xl", w: "fit" })}
-			tiltMaxAngleX={10}
-			tiltMaxAngleY={10}
-			glareEnable
-			glareMaxOpacity={0.08}
+			className={css({ rounded: "xl", w: "full" })}
+			tiltMaxAngleX={props.tiltMaxAngleX ?? 10} // todo: idk if this is necessary, i'll see later.
+			tiltMaxAngleY={props.tiltMaxAngleY ?? 10}
+			glareEnable={props.glareEnable ?? true}
+			glareMaxOpacity={props.glareEnable ? 0.08 : 0}
 			glarePosition="all"
 			{...props}
 		>

@@ -4,7 +4,7 @@ import { Text } from "@/components/ui/info/text/text";
 import { Box, Divider, Flex, HStack, Stack, styled } from "@/styled-system/jsx";
 import Tilt from "../misc/tilt";
 import { Badge } from "@/components/ui/deco/badge/badge";
-import IconWrapper from "../misc/icon-wrapper";
+import { IconWrapper } from "../misc/icon-wrapper";
 import { Image } from "@/components/ui/info/image/image";
 import { Show } from "../util/show";
 
@@ -14,61 +14,69 @@ interface HGameCardProps {
 	logoAsset: string;
 	title: string;
 	isNew: boolean;
+	tilt?: boolean;
 }
 
-// mocked component
 export default function HGameCard({
 	backgroundAsset,
 	logoAsset,
 	title,
 	isNew,
+	tilt = false,
 }: HGameCardProps) {
 	return (
-		<Tilt>
+		<Tilt
+			tiltEnable={tilt}
+			glareEnable={tilt}
+			tiltMaxAngleX={5}
+			tiltMaxAngleY={5}
+		>
 			<Box
-				bgSize={"cover"}
-				border="1px solid {colors.border}"
-				cursor={"pointer"}
-				w="xs"
 				bg="bg.subtle"
-				h={"2/3"}
+				minW="xs"
+				w="full"
+				h="full"
+				cursor="pointer"
 				rounded="xl"
+				overflow="hidden"
 				pos="relative"
-				overflow={"hidden"}
-				ring={"2px solid transparent"}
+				bgSize="cover"
+				border="1px solid {colors.border}"
+				ring="2px solid transparent"
 				ringOffset={0.5}
-				_hover={{
-					ringColor: "border.muted",
-				}}
+				_hover={{ ringColor: "border.muted" }}
 			>
-				<Box
-					bg="brand"
+				<Image
+					src={backgroundAsset}
+					alt={`${title} background`}
+					top={0}
+					left={0}
 					w="full"
-					h="28"
+					h="min"
+					objectFit="cover"
 					className="mask-to-b"
-					pos="absolute"
-					bgSize={"cover"}
-					bgRepeat={"no-repeat"}
-					style={{ backgroundImage: `url('${backgroundAsset}')` }}
+					zIndex={"base"}
 				/>
-				<Flex ml="auto" w="full" p={3} justifyContent={"end"} pos="absolute">
+				<Flex
+					pos="absolute"
+					top={0}
+					right={0}
+					w="full"
+					p={3}
+					justifyContent="end"
+				>
 					<Image w={28} h="min" src={logoAsset} alt={title} />
 				</Flex>
-				<Stack
-					zIndex={"base"}
-					p={3}
-					mt={20}
-					bgGradient={"to-t"}
-					gradientFrom={"bg.subtle"}
-					gradientVia={"bg.subtle"}
-					gradientTo={"transparent"}
-					roundedBottom={"calc(var(--orb-radii-xl) - 0.10)"}
-				>
+				<Stack p={3}>
 					<HStack>
 						<Heading>{title}</Heading>
 						<Show when={isNew}>
-							<Badge variant="soft" colorPalette={"brand"}>
-								<IconWrapper name="flame" />
+							<Badge variant="soft" colorPalette="brand">
+								<IconWrapper
+									name="badge-alert"
+									fill="brand.500/10"
+									strokeWidth={3}
+								/>
 								NEW
 							</Badge>
 						</Show>
@@ -80,19 +88,20 @@ export default function HGameCard({
 							playing right now
 						</Text>
 					</HStack>
-					<Divider borderColor={"border"} w="12" />
+
+					<Divider borderColor="border" w="12" />
 					<HStack>
 						<HStack spaceX={-5}>
-							{[...Array(3)].map((key) => (
+							{[...Array(3)].map((i) => (
 								<AvatarRoot
-									ring={"3px solid {colors.bg.subtle}"}
-									key={key}
+									key={i}
+									ring="3px solid {colors.bg.subtle}"
 									size="sm"
 								>
 									<AvatarFallback size="xs">CH</AvatarFallback>
 								</AvatarRoot>
 							))}
-							<AvatarRoot ring={"3px solid {colors.bg.subtle}"} size="sm">
+							<AvatarRoot ring="3px solid {colors.bg.subtle}" size="sm">
 								<AvatarFallback size="xs">+1</AvatarFallback>
 							</AvatarRoot>
 						</HStack>

@@ -130,6 +130,10 @@ export default defineConfig({
 				fontFamily: "body",
 				"-webkit-font-smoothing": "antialiased",
 				"-moz-osx-font-smoothing": "grayscale",
+				"::-moz-selection, ::selection": {
+					bg: "brand.emphasized",
+					color: "brand.contrast",
+				},
 			},
 		},
 	},
