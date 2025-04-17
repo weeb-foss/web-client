@@ -99,7 +99,6 @@ export default function NewPostModal({
 						</HStack>
 					</Stack>
 				</DialogPopup>
-				<Button>XD</Button>
 			</DialogPortal>
 		</DialogRoot>
 	);
