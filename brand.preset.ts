@@ -1,3 +1,8 @@
+/**
+ * DEPRECATED PRESET
+ * THIS FILE WILL BE REMOVED IN THE NEXT MAJOR COMMIT
+ */
+
 import {
 	defineAnimationStyles,
 	definePreset,
