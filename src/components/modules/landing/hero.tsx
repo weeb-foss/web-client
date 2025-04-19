@@ -5,21 +5,23 @@ import { Image } from "@/components/ui/info/image/image";
 import { Text } from "@/components/ui/info/text/text";
 import { Center, HStack, styled, VStack } from "@/styled-system/jsx";
 
+// pending review
 export default function LandingHero() {
 	return (
 		<Center h="70vh" pos="relative" overflowX={"hidden"} overflowY={"clip"}>
 			<Image
-				src="/assets/apex-char.png"
+				src="/__mocked__/static/apex-char.png"
 				alt="landing left image"
 				w={"xl"}
 				h={"min"}
 				pos={"absolute"}
 				left={-12}
 				zIndex={"hide"}
+				opacity={0.7}
 			/>
 			<VStack textAlign={"center"} pos="relative" maxW="3xl" gap={6}>
 				<Image
-					src="/assets/hero.svg"
+					src="/__mocked__/static/hero.svg"
 					alt="landing bg image"
 					w={"5xl"}
 					h={"3xl"}
@@ -56,13 +58,14 @@ export default function LandingHero() {
 				</HStack>
 			</VStack>
 			<Image
-				src="/assets/fragpunk-char.png"
+				src="/__mocked__/static/fragpunk-char.png"
 				alt="landing right image"
 				w={"3xl"}
 				h={"min"}
 				pos={"absolute"}
 				right={-16}
 				zIndex={"hide"}
+				opacity={0.7}
 			/>
 		</Center>
 	);

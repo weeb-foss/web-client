@@ -17,11 +17,11 @@ import {
 import {
 	UserRoundIcon,
 	PlusIcon,
-	SlidersVerticalIcon,
 	BellDotIcon,
 	SparklesIcon,
 	LogOutIcon,
 	Trash2Icon,
+	MonitorCogIcon,
 } from "lucide-react";
 import { Fragment, useRef, useState } from "react";
 
@@ -33,7 +33,10 @@ export default function TestMenu() {
 		<Fragment>
 			<MenuRoot>
 				<MenuTrigger ref={menuTriggerRef} render={<AvatarRoot />}>
-					<AvatarImage src="/assets/simxnet.png" alt="simxnet's avatar" />
+					<AvatarImage
+						src="/__mocked__/users/simxnet.png"
+						alt="simxnet's avatar"
+					/>
 				</MenuTrigger>
 				<MenuPortal>
 					<MenuPositioner>
@@ -56,8 +59,8 @@ export default function TestMenu() {
 									Create a post
 								</MenuItem>
 								<MenuItem>
-									<SlidersVerticalIcon />
-									Content preferences
+									<MonitorCogIcon />
+									Preferences
 								</MenuItem>
 							</MenuGroup>
 							<MenuSeparator />
@@ -67,7 +70,9 @@ export default function TestMenu() {
 									<BellDotIcon />
 									Notifications
 								</MenuItem>
-								<MenuItem _hover={{ bg: "yellow.subtle", color: "yellow.fg" }}>
+								<MenuItem
+									_hover={{ bg: "yellow.subtle!", color: "yellow.fg!" }}
+								>
 									<SparklesIcon />
 									Premium
 									<Badge variant="soft" colorPalette={"yellow"}>
@@ -78,11 +83,11 @@ export default function TestMenu() {
 							<MenuSeparator />
 							<MenuGroup>
 								<MenuGroupLabel>Risky</MenuGroupLabel>
-								<MenuItem _hover={{ bg: "bg.error", color: "fg.error" }}>
+								<MenuItem _hover={{ bg: "bg.error!", color: "fg.error!" }}>
 									<LogOutIcon />
 									Logout
 								</MenuItem>
-								<MenuItem _hover={{ bg: "bg.error", color: "fg.error" }}>
+								<MenuItem _hover={{ bg: "bg.error!", color: "fg.error!" }}>
 									<Trash2Icon />
 									Delete profile
 								</MenuItem>

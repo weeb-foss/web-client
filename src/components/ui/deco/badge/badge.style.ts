@@ -7,15 +7,16 @@ export const badge = cva({
 		alignItems: "center",
 		gap: "1",
 		rounded: "md",
-		px: "1.5",
-		py: "0.5",
+		px: "2",
+		py: "1",
 		h: "fit",
-		fontSize: "sm",
+		textStyle: "xs",
 		fontWeight: "semibold",
 		forcedColorAdjust: "auto",
 		_icon: {
 			boxSize: "4",
 		},
+		userSelect: "none",
 	},
 	variants: {
 		variant: {

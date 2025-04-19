@@ -9,10 +9,14 @@ export const input = cva({
 		py: "2",
 		rounded: "lg",
 		border: "1px solid",
-		borderColor: "border",
+		borderColor: {
+			base: "border",
+			_hover: "border.emphasized",
+			_focus: "border.emphasized",
+		},
 		bg: {
 			base: "bg.subtle",
-			_hover: "bg.muted",
+			_hover: "bg.emphasized",
 			_focus: "bg.emphasized",
 		},
 		color: "text.subtle",
@@ -20,7 +24,7 @@ export const input = cva({
 		transition: "fast",
 		_placeholder: {
 			color: "text.muted",
-			fontStyle: "italic",
+			textStyle: "xs",
 		},
 		_focus: {
 			outline: "none",

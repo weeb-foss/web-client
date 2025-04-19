@@ -40,7 +40,11 @@ export default function LandingFeatures() {
 						</Text>
 					</Stack>
 					<HStack w="1/2" justifyContent={"center"}>
-						<Image src="/assets/quests.png" w="full" objectFit={"contain"} />
+						<Image
+							src="/__mocked__/static/quests.png"
+							w="full"
+							objectFit={"contain"}
+						/>
 					</HStack>
 				</HStack>
 				<HStack
@@ -77,7 +81,7 @@ export default function LandingFeatures() {
 					</Stack>
 					<HStack w="xl" justifyContent={"center"}>
 						<Image
-							src="/assets/leaderboard.png"
+							src="/__mocked__/static/leaderboard.png"
 							w="full"
 							objectFit={"contain"}
 						/>

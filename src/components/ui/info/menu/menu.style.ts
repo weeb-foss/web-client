@@ -4,6 +4,11 @@ import type { RecipeVariantProps } from "@/styled-system/css";
 export const menuTrigger = cva({
 	base: {
 		cursor: "pointer",
+		outline: "none",
+		_focusVisible: {
+			ring: "2px solid {colors.brand.focusRing}",
+		},
+		transitionDuration: "faster",
 	},
 });
 
@@ -36,7 +41,7 @@ export const menuPopup = cva({
 		maxW: "sm",
 		border: "1px solid {colors.border}",
 		translate: "auto",
-		animationDuration: "0.1s",
+		animationDuration: "faster",
 		_open: {
 			animationStyle: "scale-fade-in",
 		},

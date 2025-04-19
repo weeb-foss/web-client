@@ -11,12 +11,15 @@ export const button = cva({
 		position: "relative",
 		whiteSpace: "nowrap",
 		cursor: "pointer",
-		fontWeight: "bold",
+		fontWeight: "semibold",
 		w: "fit",
 		_disabled: {
 			opacity: 0.5,
 			cursor: "not-allowed",
 			pointerEvents: "none",
+		},
+		_focusVisible: {
+			ring: "2px solid {colors.brand.focusRing}",
 		},
 		userSelect: "none",
 		transitionDuration: "fast",
@@ -123,7 +126,7 @@ export const button = cva({
 				rounded: "full",
 			},
 			false: {
-				rounded: "xl",
+				rounded: "lg",
 			},
 		},
 		levitate: {
