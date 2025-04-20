@@ -1,5 +1,5 @@
 import { IconWrapper } from "@/components/shared/misc/icon-wrapper";
-import { Button } from "@/components/ui/form/button/button";
+import { ButtonLink } from "@/components/ui/form/button/button";
 import { Heading } from "@/components/ui/info/heading/heading";
 import { Image } from "@/components/ui/info/image/image";
 import { Text } from "@/components/ui/info/text/text";
@@ -8,7 +8,7 @@ import { Center, HStack, styled, VStack } from "@/styled-system/jsx";
 // pending review
 export default function LandingHero() {
 	return (
-		<Center h="70vh" pos="relative" overflowX={"hidden"} overflowY={"clip"}>
+		<Center h="100vh" pos="relative" overflowX={"hidden"} overflowY={"clip"}>
 			<Image
 				src="/__mocked__/static/apex-char.png"
 				alt="landing left image"
@@ -48,10 +48,16 @@ export default function LandingHero() {
 					repudiandae incidunt quasi consequuntur, veniam placeat veritatis
 					necessitatibus minima excepturi dolorem sunt!
 				</Text>
-				<Button levitate pill variant="subtle" colorPalette={"bg"}>
-					Start your journey
+				<ButtonLink
+					href="/kitchen-sink"
+					levitate
+					pill
+					variant="subtle"
+					colorPalette={"bg"}
+				>
+					Kitchen sink
 					<IconWrapper name="arrow-up-right" />
-				</Button>
+				</ButtonLink>
 				<HStack>
 					<Text size="xs">Not sure yet? Scroll down</Text>
 					<IconWrapper name="mouse" w={5} h={5} color="fg.muted" />

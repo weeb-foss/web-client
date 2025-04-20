@@ -1,10 +1,12 @@
-import { ButtonLink } from "@/components/ui/form/button/button";
-import { ArrowUpRightIcon } from "lucide-react";
+import LandingFeatures from "@/components/modules/landing/features";
+import LandingHero from "@/components/modules/landing/hero";
+import { Fragment } from "react";
 
-export default function HomePage() {
+export default function LandingPage() {
 	return (
-		<ButtonLink colorPalette={"brand"} href="/kitchen-sink">
-			Go to kitchen sink <ArrowUpRightIcon />
-		</ButtonLink>
+		<Fragment>
+			<LandingHero />
+			<LandingFeatures />
+		</Fragment>
 	);
 }

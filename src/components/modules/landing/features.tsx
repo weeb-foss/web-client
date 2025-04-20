@@ -1,7 +1,7 @@
 import { Heading } from "@/components/ui/info/heading/heading";
 import { Image } from "@/components/ui/info/image/image";
 import { Text } from "@/components/ui/info/text/text";
-import { Container, HStack, Stack, styled, VStack } from "@/styled-system/jsx";
+import { Container, HStack, Stack, styled } from "@/styled-system/jsx";
 
 export default function LandingFeatures() {
 	return (
@@ -87,15 +87,6 @@ export default function LandingFeatures() {
 						/>
 					</HStack>
 				</HStack>
-				<VStack mx="auto" maxW="xl" textAlign={"center"}>
-					<Heading>And more coming soon...</Heading>
-					<Text>
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
-						dolores repellendus deleniti alias, ipsum sunt mollitia. Nam,
-						ratione quod unde obcaecati tempora, incidunt atque fuga ad,
-						accusamus laudantium voluptates minima.
-					</Text>
-				</VStack>
 			</Stack>
 		</Container>
 	);
