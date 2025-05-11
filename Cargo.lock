@@ -1558,9 +1558,9 @@ dependencies = [
 
 [[package]]
 name = "ssr_rs"
-version = "0.8.2"
+version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e2365f46dc701312d2300fcdd3266d02c847ca8b07d4f7933c3493a2d4d4ef38"
+checksum = "ab83b50aa5c18fa672e47ed60a8d25f24872f3b0157fbd70a034c8623bee5e2c"
 dependencies = [
  "v8",
 ]
@@ -1883,9 +1883,9 @@ dependencies = [
 
 [[package]]
 name = "tuono_internal"
-version = "0.19.3"
+version = "0.19.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b0d21383f12c0a62cc98c360a2c997106abb8c4b0a274b2b2aaa15b972bfd54b"
+checksum = "f5af350eb7fd79c08d83c4d5165ffc094f1572d34add305759e0e8fe63c56e29"
 dependencies = [
  "serde",
  "serde_json",
@@ -1893,9 +1893,9 @@ dependencies = [
 
 [[package]]
 name = "tuono_lib"
-version = "0.19.3"
+version = "0.19.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a8b204d33cbfb5e0476eae08b13c74e885ee33296a272b9551eaa0e1b8d1331e"
+checksum = "34e9d727e87cf904bc32d42f9a3e8db5a30126d91bd2bbf212534aafd8f04196"
 dependencies = [
  "axum",
  "axum-extra",
@@ -1923,9 +1923,9 @@ dependencies = [
 
 [[package]]
 name = "tuono_lib_macros"
-version = "0.19.3"
+version = "0.19.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4e68a2d3dc63b99ad95229a02eaa059421b0509114ece91981fdd422fec5e404"
+checksum = "6b67b1e1a539f2bcd4d64694411b40ec609c0a15c0c4d50c484b8adbbf14e10a"
 dependencies = [
  "quote",
  "syn",
