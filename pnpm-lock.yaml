@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@base-ui-components/react':
         specifier: 1.0.0-alpha.8
-        version: 1.0.0-alpha.8(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 1.0.0-alpha.8(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@chakra-ui/panda-preset':
         specifier: ^3.16.0
         version: 3.16.0
@@ -38,13 +38,13 @@ importers:
         version: 0.53.4(typescript@5.8.3)
       '@pandacss/studio':
         specifier: ^0.53.4
-        version: 0.53.4(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)
+        version: 0.53.4(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)
       '@types/react':
         specifier: ^19.1.2
-        version: 19.1.2
+        version: 19.1.8
       '@types/react-dom':
         specifier: ^19.1.2
-        version: 19.1.2(@types/react@19.1.2)
+        version: 19.1.6(@types/react@19.1.8)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -971,13 +971,13 @@ packages:
   '@types/node@17.0.45':
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
 
-  '@types/react-dom@19.1.2':
-    resolution: {integrity: sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==}
+  '@types/react-dom@19.1.6':
+    resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
     peerDependencies:
       '@types/react': ^19.0.0
 
-  '@types/react@19.1.2':
-    resolution: {integrity: sha512-oxLPMytKchWGbnQM9O7D67uPa9paTNxO7jVoNMXgkkErULBPhPARCfkKL9ytcIJJRGjbsVwW4ugJzyFFvm/Tiw==}
+  '@types/react@19.1.8':
+    resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
 
   '@types/unist@3.0.3':
     resolution: {integrity: sha512-ko/gIFJRv177XgZsZcBwnqJN5x/Gien8qNOn0D5bQU/zAzVf9Zt3BlcUiLqhV9y4ARk0GbT3tnUiPNgnTXzc/Q==}
@@ -2493,10 +2493,10 @@ snapshots:
     dependencies:
       prismjs: 1.30.0
 
-  '@astrojs/react@4.2.2(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(lightningcss@1.25.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+  '@astrojs/react@4.2.2(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(lightningcss@1.25.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
     dependencies:
-      '@types/react': 19.1.2
-      '@types/react-dom': 19.1.2(@types/react@19.1.2)
+      '@types/react': 19.1.8
+      '@types/react-dom': 19.1.6(@types/react@19.1.8)
       '@vitejs/plugin-react': 4.4.0(vite@6.2.5(lightningcss@1.25.1))
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -2652,7 +2652,7 @@ snapshots:
       '@babel/helper-string-parser': 7.25.9
       '@babel/helper-validator-identifier': 7.25.9
 
-  '@base-ui-components/react@1.0.0-alpha.8(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@base-ui-components/react@1.0.0-alpha.8(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@babel/runtime': 7.27.0
       '@floating-ui/react': 0.27.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -2663,7 +2663,7 @@ snapshots:
       react-dom: 19.1.0(react@19.1.0)
       use-sync-external-store: 1.5.0(react@19.1.0)
     optionalDependencies:
-      '@types/react': 19.1.2
+      '@types/react': 19.1.8
 
   '@biomejs/biome@1.9.4':
     optionalDependencies:
@@ -3136,9 +3136,9 @@ snapshots:
 
   '@pandacss/shared@0.53.4': {}
 
-  '@pandacss/studio@0.53.4(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)':
+  '@pandacss/studio@0.53.4(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3)':
     dependencies:
-      '@astrojs/react': 4.2.2(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(lightningcss@1.25.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@astrojs/react': 4.2.2(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(lightningcss@1.25.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@pandacss/astro-plugin-studio': 0.53.4(astro@5.5.5(lightningcss@1.25.1)(rollup@4.40.0)(typescript@5.8.3))(typescript@5.8.3)
       '@pandacss/config': 0.53.4
       '@pandacss/logger': 0.53.4
@@ -3516,11 +3516,11 @@ snapshots:
 
   '@types/node@17.0.45': {}
 
-  '@types/react-dom@19.1.2(@types/react@19.1.2)':
+  '@types/react-dom@19.1.6(@types/react@19.1.8)':
     dependencies:
-      '@types/react': 19.1.2
+      '@types/react': 19.1.8
 
-  '@types/react@19.1.2':
+  '@types/react@19.1.8':
     dependencies:
       csstype: 3.1.3
 
