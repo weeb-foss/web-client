@@ -13,7 +13,7 @@ importers:
         version: 1.0.0-alpha.8(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@chakra-ui/panda-preset':
         specifier: ^3.16.0
-        version: 3.16.0
+        version: 3.21.0
       lucide-react:
         specifier: ^0.501.0
         version: 0.501.0(react@19.1.0)
@@ -240,8 +240,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@chakra-ui/panda-preset@3.16.0':
-    resolution: {integrity: sha512-fOSI8WIw+vrRReaKTJgMtahIYLgM9Y0UaJZvi3k17mziBfJiV87zjnRz3I7u9JlCkBQJEeB6D5uvhE3v+K96DQ==}
+  '@chakra-ui/panda-preset@3.21.0':
+    resolution: {integrity: sha512-CkUvkS2zp7YIL9OxtFncSDXUAJ7GXfXkZF5T3941LBxGqU0v65hNiGa9wJHCvNWh1b5h8HRttr7NdUKqlIUBSQ==}
 
   '@clack/core@0.4.1':
     resolution: {integrity: sha512-Pxhij4UXg8KSr7rPek6Zowm+5M22rbd2g1nfojHJkxp5YkFqiZ2+YLEM/XGVIzvGOcM0nqjIFxrpDwWRZYWYjA==}
@@ -642,11 +642,11 @@ packages:
   '@pandacss/token-dictionary@0.53.4':
     resolution: {integrity: sha512-PIFT/inoPbJ0sZaU2mOdKDhXAiCMgVghtHI2ukJ6106rjYoNoJfRIFqqkB6gQrpWD1si2i4Cc7aajYV3hzXGuw==}
 
-  '@pandacss/types@0.51.1':
-    resolution: {integrity: sha512-yy8wr6LjdwRZUaid37CE/TxJyxkD1cyTj8OQfwSFxwfxSLsupzX00/IoNw4OJyfm/inTCmcj7DfSVmRrAsi4Bw==}
-
   '@pandacss/types@0.53.4':
     resolution: {integrity: sha512-yEM/ZfAYEkCi7xMlBqUaKxf0LuMVOyq/bkZkyLuvXIcDVAFJ+eNDDI+oPT8hq7e/An++tVpp0FhY3LQ4X2bpoA==}
+
+  '@pandacss/types@0.53.7':
+    resolution: {integrity: sha512-BBl4a2G5PQT45crYfVqDKhvfhjnltDwD9HtCbMP6375LFrBKDjoKqj8N5GaLE6xSuP09OZYbVXhRsQOaRVSXHA==}
 
   '@react-aria/focus@3.20.2':
     resolution: {integrity: sha512-Q3rouk/rzoF/3TuH6FzoAIKrl+kzZi9LHmr8S5EqLAOyP9TXIKG34x2j42dZsAhrw7TbF9gA8tBKwnCNH4ZV+Q==}
@@ -2700,9 +2700,9 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.4':
     optional: true
 
-  '@chakra-ui/panda-preset@3.16.0':
+  '@chakra-ui/panda-preset@3.21.0':
     dependencies:
-      '@pandacss/types': 0.51.1
+      '@pandacss/types': 0.53.7
 
   '@clack/core@0.4.1':
     dependencies:
@@ -3193,9 +3193,9 @@ snapshots:
       '@pandacss/types': 0.53.4
       ts-pattern: 5.0.8
 
-  '@pandacss/types@0.51.1': {}
-
   '@pandacss/types@0.53.4': {}
+
+  '@pandacss/types@0.53.7': {}
 
   '@react-aria/focus@3.20.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
