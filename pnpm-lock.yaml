@@ -25,7 +25,7 @@ importers:
         version: 19.1.0(react@19.1.0)
       react-parallax-tilt:
         specifier: ^1.7.291
-        version: 1.7.291(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 1.7.298(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tuono:
         specifier: 0.19.3
         version: 0.19.3(@swc/helpers@0.5.17)(lightningcss@1.25.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.0)
@@ -1941,8 +1941,8 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-parallax-tilt@1.7.291:
-    resolution: {integrity: sha512-BwcgoyEndiZqpT4gRcXlLd531RTMKeGyxbK92FrXlNr+I9iFSSEd0PddDYRWRVgSoLYlcMHyih6GdXcqXNqplw==}
+  react-parallax-tilt@1.7.298:
+    resolution: {integrity: sha512-onHiUJJDJEOiqU4QP7jYQP1d1+ivFLBrCLRxTfVU/NqAhP0kOgWr9YY5ataYcK0eusltX9GGIpIDh+D9PfCfPA==}
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -4734,7 +4734,7 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-parallax-tilt@1.7.291(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  react-parallax-tilt@1.7.298(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
