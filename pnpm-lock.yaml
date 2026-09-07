@@ -27,8 +27,8 @@ importers:
         specifier: ^1.7.291
         version: 1.7.291(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tuono:
-        specifier: 0.19.3
-        version: 0.19.3(@swc/helpers@0.5.17)(lightningcss@1.25.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.0)
+        specifier: 0.19.7
+        version: 0.19.7(@swc/helpers@0.5.17)(lightningcss@1.25.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.0)
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -880,24 +880,28 @@ packages:
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@swc/core-linux-arm64-musl@1.11.21':
     resolution: {integrity: sha512-y1L49+snt1a1gLTYPY641slqy55QotPdtRK9Y6jMi4JBQyZwxC8swWYlQWb+MyILwxA614fi62SCNZNznB3XSA==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@swc/core-linux-x64-gnu@1.11.21':
     resolution: {integrity: sha512-NesdBXv4CvVEaFUlqKj+GA4jJMNUzK2NtKOrUNEtTbXaVyNiXjFCSaDajMTedEB0jTAd9ybB0aBvwhgkJUWkWA==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@swc/core-linux-x64-musl@1.11.21':
     resolution: {integrity: sha512-qFV60pwpKVOdmX67wqQzgtSrUGWX9Cibnp1CXyqZ9Mmt8UyYGvmGu7p6PMbTyX7vdpVUvWVRf8DzrW2//wmVHg==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@swc/core-win32-arm64-msvc@1.11.21':
     resolution: {integrity: sha512-DJJe9k6gXR/15ZZVLv1SKhXkFst8lYCeZRNHH99SlBodvu4slhh/MKQ6YCixINRhCwliHrpXPym8/5fOq8b7Ig==}
@@ -2145,16 +2149,16 @@ packages:
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
 
-  tuono-fs-router-vite-plugin@0.19.3:
-    resolution: {integrity: sha512-7TBCbJYO5MJQvquta/K/hxIhjWSirkIPZGojw+UYAIogZanp1dMqZKX5OfBPfEdDqNigdoy83SchFE8avtIJog==}
+  tuono-react-vite-plugin@0.19.7:
+    resolution: {integrity: sha512-QePLrY31kwhCjyvB/uaMDwtHmsqdAn7baKi3hzd/lyaHfLUzFFcs2MROSxtEgk4UEXJaUW3hnVTA9MPQwl/1Gw==}
 
-  tuono-router@0.19.3:
-    resolution: {integrity: sha512-BY1QpBv5dveylW19UrNVAvKwTiHrxYFaSWYEJ5EWXmGu/IfspWgjNuMPkq3Qb0+NYY28ONXqEYaXLdLeaUg4xQ==}
+  tuono-router@0.19.7:
+    resolution: {integrity: sha512-QaME8UMNneiuyh1MrjGeAhHOhpk5NoI9ju4grL8HM9V+UJ5Fm9AWRPBbCp9gjtMyyaYBGcNN0D6TdrI2Na0+qw==}
     peerDependencies:
       react: '>=19.0.0'
 
-  tuono@0.19.3:
-    resolution: {integrity: sha512-qhg0iNLwzrXD9GL/mlXCEjp1sb3AIHebgVgNeD8wzurfPAuwsFCIppU/mNd6NEIcsr/vypCBKHqUOWVRFXQpMA==}
+  tuono@0.19.7:
+    resolution: {integrity: sha512-Zp7wbyW/NoNw9WE1IAUWQu24o0bSPJiYDFykeO2o2L5sG//RmlTRKmtrW8juEj48yGO/1JBQF10M9KapqTZHuA==}
     hasBin: true
     peerDependencies:
       react: '>=19.0.0'
@@ -5017,7 +5021,7 @@ snapshots:
 
   tslib@2.8.1: {}
 
-  tuono-fs-router-vite-plugin@0.19.3(lightningcss@1.25.1):
+  tuono-react-vite-plugin@0.19.7(lightningcss@1.25.1):
     dependencies:
       '@babel/core': 7.26.10
       '@babel/types': 7.27.0
@@ -5037,14 +5041,14 @@ snapshots:
       - tsx
       - yaml
 
-  tuono-router@0.19.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  tuono-router@0.19.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       react: 19.1.0
       react-intersection-observer: 9.16.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     transitivePeerDependencies:
       - react-dom
 
-  tuono@0.19.3(@swc/helpers@0.5.17)(lightningcss@1.25.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.0):
+  tuono@0.19.7(@swc/helpers@0.5.17)(lightningcss@1.25.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.0):
     dependencies:
       '@babel/core': 7.26.10
       '@babel/plugin-syntax-jsx': 7.25.9(@babel/core@7.26.10)
@@ -5054,8 +5058,8 @@ snapshots:
       fast-text-encoding: 1.0.6
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
-      tuono-fs-router-vite-plugin: 0.19.3(lightningcss@1.25.1)
-      tuono-router: 0.19.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      tuono-react-vite-plugin: 0.19.7(lightningcss@1.25.1)
+      tuono-router: 0.19.7(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       url-search-params-polyfill: 8.2.5
       vite: 6.3.2(lightningcss@1.25.1)
       web-streams-polyfill: 4.1.0
