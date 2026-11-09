@@ -25,7 +25,7 @@ importers:
         version: 19.1.0(react@19.1.0)
       react-parallax-tilt:
         specifier: ^1.7.291
-        version: 1.7.291(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        version: 1.7.352(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tuono:
         specifier: 0.19.3
         version: 0.19.3(@swc/helpers@0.5.17)(lightningcss@1.25.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(rollup@4.40.0)
@@ -179,6 +179,7 @@ packages:
   '@base-ui-components/react@1.0.0-alpha.8':
     resolution: {integrity: sha512-tGSksjEjA9TPguCXzFZU2cpvvsE6lnkVWVI0qSk3Zl/jQiE9F6opPVBp1uzHcJou7hj7fr6pEgtNf7WzsiXh4Q==}
     engines: {node: '>=14.0.0'}
+    deprecated: Package was renamed to @base-ui/react
     peerDependencies:
       '@types/react': ^17 || ^18 || ^19
       react: ^17 || ^18 || ^19
@@ -1941,8 +1942,8 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-parallax-tilt@1.7.291:
-    resolution: {integrity: sha512-BwcgoyEndiZqpT4gRcXlLd531RTMKeGyxbK92FrXlNr+I9iFSSEd0PddDYRWRVgSoLYlcMHyih6GdXcqXNqplw==}
+  react-parallax-tilt@1.7.352:
+    resolution: {integrity: sha512-MEeDXGrZ8RKxMXp+pe2b02PFd3Rygr4VEmZGlG11UPSOuC7VGpit9qF5RAT6n2XU9Gp54YHsdG4NNS53O0faCQ==}
     peerDependencies:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
@@ -2125,6 +2126,7 @@ packages:
   tsconfck@3.0.2:
     resolution: {integrity: sha512-6lWtFjwuhS3XI4HsX4Zg0izOI3FU/AI9EGVlPEUMDIhvLPMD4wkiof0WCoDgW7qY+Dy198g4d9miAqUHWHFH6Q==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -2135,6 +2137,7 @@ packages:
   tsconfck@3.1.5:
     resolution: {integrity: sha512-CLDfGgUp7XPswWnezWwsCRxNmgQjhYq3VXHM0/XIRxhVrKw0M1if9agzryh1QS3nxjCROvV+xWxoJO1YctzzWg==}
     engines: {node: ^18 || >=20}
+    deprecated: unmaintained
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
@@ -4734,7 +4737,7 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-parallax-tilt@1.7.291(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  react-parallax-tilt@1.7.352(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
